@@ -1,0 +1,263 @@
+html{
+    
+    height: 100%;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+ 
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    
+}
+
+.left-side{
+    display: flex;
+
+}
+.nav-wrapper>.left-side >div{
+    display: flex;
+    margin-right: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family:  'comic sans', 'valorant',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-wrapper>.right-side >div{
+    display: flex;
+    margin-right: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family:  'comic sans', 'valorant',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-link-wrapper a{
+    color:#8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1.5px solid black;
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+/*portfolio*/
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+ .subtitle{
+    position:absolute;
+    top: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family:  'comic sans', 'valorant',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: lightseagreen;    
+ }
+ .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+    }
+
+ .subtitle:hover{
+    font-weight: 600;
+    color: lightseagreen;
+
+ }
+
+ .img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/*about page stles*/
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img{
+    width:100%;
+}
+
+.profile-content-wrapper{
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+    color: lightseagreen;
+    font-family:  'comic sans', 'valorant',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.profile-content-wrapper p{
+    font-family:  'comic sans', 'valorant',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+font-size: 25px;
+}
+
+.profile-content-wrapper a{
+    text-decoration: none;
+    font-size:30px;
+}
+
+/*contact box css*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:  'comic sans', 'valorant',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.containercont{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    padding: 20px 100px;
+ }
+
+.containercont :after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/portfolio13.jpg") no-repeat center;
+    background-size:cover;
+    z-index: -1;
+}
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.left{
+    height:100%;
+    background: url("images/portfolio13.jpg") no-repeat center;
+    background-size:cover;
+
+}
+.right{
+    padding:25px 40px;
+}
+ h2{
+
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+ }
+
+ h2:after{
+    content: '';
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+
+ }
+ .field{
+    width: 100%;
+    padding: 0.5rem  1rem;
+    outline:none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom:22px;
+    transition: .3s;
+
+ }
+ .field :hover {
+    background-color: rgba(0,0,0,0.1);
+ }
+.field :focus{
+    background-color: #fff;
+    border:2px solid rgba(30,85,250,0.47);
+}
+.area{
+    min-height: 150px;
+}
+.btn{
+    width:100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+
+}
+
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height:200px;
+    }
+}
